@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dossie 1917 - Revolucao Russa, apresentacao interativa estilo investigacao historica.">
+    <title>Dossie 1917 - Revolucao Russa</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="loader" class="loader" aria-live="polite">
+      <div class="loader-noise"></div>
+      <div class="loader-dossier">
+        <span class="stamp stamp-danger">SIGILOSO</span>
+        <strong>DOSSIE 1917</strong>
+        <small>Indexando depoimentos, mapas e evidencias...</small>
+        <div class="loader-track"><span></span></div>
+        <em>Classificacao: TCC / Banca universitaria</em>
+      </div>
+    </div>
+
+    <div class="ambient-grid" aria-hidden="true"></div>
+    <div class="film-grain" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+
+    <aside class="case-hud" aria-label="Painel da apresentacao">
+      <div>
+        <span id="hudSlide">01</span>
+        <strong id="hudTitle">Capa</strong>
+      </div>
+      <div class="hud-meter"><span id="hudMeter"></span></div>
+      <button type="button" data-action="fullscreen" aria-label="Tela cheia" title="Tela cheia">&#x26F6;</button>
+    </aside>
+
+    <div class="reveal">
+      <div class="slides">
+        <section class="slide-cover" data-title="Capa">
+          <div class="hero-bg" aria-hidden="true"></div>
+          <div class="hero-scan" aria-hidden="true"></div>
+          <div class="cover-content">
+            <p class="eyebrow">Arquivo historico interativo / Caso RU-1917</p>
+            <h1>Dossie 1917<br><span>Revolucao Russa</span></h1>
+            <p class="lead">Uma investigacao visual sobre o colapso do czarismo, a disputa pelo poder e a origem do primeiro Estado socialista de grande escala.</p>
+            <div class="cover-actions">
+              <button class="primary-btn" type="button" data-action="start-case">Abrir investigacao</button>
+              <button class="ghost-btn" type="button" data-action="open-briefing">Briefing rapido</button>
+            </div>
+          </div>
+          <div class="cover-evidence" aria-label="Resumo do caso">
+            <article><span>1905</span><strong>Sinal de ruptura</strong></article>
+            <article><span>1914</span><strong>Guerra total</strong></article>
+            <article><span>1917</span><strong>Duplo poder</strong></article>
+            <article><span>1922</span><strong>URSS</strong></article>
+          </div>
+          <aside class="team-strip">Gustavo Tavares &middot; Leonardo &middot; Yuri &middot; Ravi &middot; Samuel &middot; Kaue</aside>
+          <aside class="notes">Abra com tom de documentario: a pergunta-guia e por que um imperio tao grande caiu em poucos meses.</aside>
+        </section>
+
+        <section data-title="Contexto">
+          <div class="slide-header">
+            <span>Arquivo 02 / Antecedentes</span>
+            <h2>Contexto historico</h2>
+          </div>
+          <div class="briefing-grid">
+            <article class="briefing-main">
+              <span class="section-kicker">Diagnostico do imperio</span>
+              <h3>Uma potencia continental com estrutura social explosiva</h3>
+              <p>A Russia do inicio do seculo XX reunia vasto territorio, atraso politico, industrializacao desigual e uma populacao majoritariamente camponesa. O Estado czarista tentava governar uma sociedade em transformacao sem abrir espaco real para participacao politica.</p>
+              <div class="metric-row">
+                <div><strong>Autocracia</strong><span>Poder concentrado</span></div>
+                <div><strong>Campo</strong><span>Demanda por terra</span></div>
+                <div><strong>Cidades</strong><span>Operariado em greve</span></div>
+              </div>
+            </article>
+            <div class="briefing-side">
+              <button class="intel-chip" data-modal="domingo" type="button"><span>1905</span> Domingo Sangrento</button>
+              <button class="intel-chip" data-modal="duma" type="button"><span>1906</span> Duma limitada</button>
+              <button class="intel-chip" data-modal="sovietes" type="button"><span>1917</span> Sovietes</button>
+            </div>
+          </div>
+          <aside class="notes">Mostre que a revolucao nasce de camadas: politica fechada, economia desigual, guerra e mobilizacao popular.</aside>
+        </section>
+
+        <section data-title="Causas">
+          <div class="slide-header">
+            <span>Arquivo 03 / Matriz causal</span>
+            <h2>Causas da revolucao</h2>
+          </div>
+          <div class="causal-matrix">
+            <article style="--accent:#b92b24"><span>01</span><h3>Autocracia</h3><p>O czar controlava o Estado, reprimia opositores e bloqueava reformas profundas.</p><button data-modal="autocracia" type="button">Abrir evidencia</button></article>
+            <article style="--accent:#c79a48"><span>02</span><h3>Questao agraria</h3><p>Camponeses queriam terra, alivio de impostos e fim da dependencia aristocratica.</p><button data-modal="terra" type="button">Abrir evidencia</button></article>
+            <article style="--accent:#6e8f91"><span>03</span><h3>Guerra mundial</h3><p>Derrotas, fome, inflacao e milhoes de mortos corroeram a legitimidade do regime.</p><button data-modal="guerra" type="button">Abrir evidencia</button></article>
+            <article style="--accent:#7d8a5e"><span>04</span><h3>Organizacao politica</h3><p>Partidos, sovietes e greves converteram sofrimento social em acao coletiva.</p><button data-modal="organizacao" type="button">Abrir evidencia</button></article>
+          </div>
+        </section>
+
+        <section data-title="Mapa">
+          <div class="slide-header">
+            <span>Arquivo 04 / Geografia do poder</span>
+            <h2>Mapa interativo da Russia</h2>
+          </div>
+          <div class="map-layout">
+            <div class="map-stage">
+              <svg class="russia-map" viewBox="0 0 980 480" role="img" aria-label="Mapa estilizado da Russia em 1917">
+                <defs>
+                  <filter id="mapGlow"><feGaussianBlur stdDeviation="3" result="blur"></feGaussianBlur><feMerge><feMergeNode in="blur"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter>
+                </defs>
+                <path class="map-land" d="M43 253 119 207 217 220 292 164 420 182 505 127 629 151 740 111 870 151 940 226 903 319 747 342 623 308 506 361 391 316 268 337 173 300 76 319Z"></path>
+                <path class="front-line" d="M240 233 C320 198 390 230 455 201 S590 179 680 205"></path>
+                <text x="300" y="205">Petrogrado</text>
+                <text x="372" y="270">Moscou</text>
+                <text x="693" y="206">Siberia</text>
+              </svg>
+              <button class="map-point active" data-map="petrogrado" style="--x:31%;--y:45%" type="button"><span>Petrogrado</span></button>
+              <button class="map-point" data-map="moscou" style="--x:38%;--y:56%" type="button"><span>Moscou</span></button>
+              <button class="map-point" data-map="siberia" style="--x:70%;--y:45%" type="button"><span>Siberia</span></button>
+            </div>
+            <article class="map-brief" id="mapBrief">
+              <span class="section-kicker">Ponto critico</span>
+              <h3>Petrogrado</h3>
+              <p>Centro politico das jornadas de Fevereiro e da insurreicao de Outubro. A cidade concentrou greves, filas por pao, manifestacoes e adesao de soldados.</p>
+              <ul>
+                <li>Palacio de Inverno como simbolo do Governo Provisorio.</li>
+                <li>Soviete de Petrogrado como polo alternativo de poder.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section data-title="Personagens">
+          <div class="slide-header">
+            <span>Arquivo 05 / Suspeitos historicos</span>
+            <h2>Personagens centrais</h2>
+          </div>
+          <div class="person-layout">
+            <div class="person-tabs" role="tablist" aria-label="Personagens">
+              <button class="active" data-person="nicolau" type="button">Nicolau II</button>
+              <button data-person="lenin" type="button">Lenin</button>
+              <button data-person="trotsky" type="button">Trotsky</button>
+              <button data-person="stalin" type="button">Stalin</button>
+            </div>
+            <article class="person-file" id="personFile">
+              <div class="person-portrait czar"></div>
+              <div>
+                <span class="section-kicker">Perfil politico</span>
+                <h3>Nicolau II</h3>
+                <p>Ultimo czar da Russia. Simboliza a rigidez da autocracia diante de uma sociedade que exigia reformas, representacao e alivio economico.</p>
+                <dl><dt>Papel</dt><dd>Monarquia em colapso</dd><dt>Risco historico</dt><dd>Perda de legitimidade</dd></dl>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section data-title="Fevereiro">
+          <div class="slide-header">
+            <span>Arquivo 06 / Primeira ruptura</span>
+            <h2>Revolucao de Fevereiro</h2>
+          </div>
+          <div class="scene-grid">
+            <article class="scene-copy">
+              <span class="section-kicker">Marco: marco de 1917</span>
+              <h3>O czarismo perde a rua, o exercito e a autoridade</h3>
+              <p>Greves, protestos por pao e motins militares em Petrogrado derrubaram Nicolau II. O movimento nasceu de problemas concretos: fome, guerra, inflacao, longas jornadas e descrenca no governo.</p>
+              <p>Depois da abdicacao, a Russia entrou no duplo poder: Governo Provisorio de um lado, sovietes de outro.</p>
+            </article>
+            <div class="evidence-stack">
+              <article><span>Depoimento 01</span><strong>Operarios em greve</strong><p>Paralisacoes ampliam a pressao urbana.</p></article>
+              <article><span>Depoimento 02</span><strong>Soldados aderem</strong><p>O regime perde sua forca coercitiva.</p></article>
+              <article><span>Resultado</span><strong>Abdicacao</strong><p>Fim da dinastia Romanov.</p></article>
+            </div>
+          </div>
+        </section>
+
+        <section data-title="Outubro">
+          <div class="slide-header">
+            <span>Arquivo 07 / Tomada do poder</span>
+            <h2>Revolucao de Outubro</h2>
+          </div>
+          <div class="october-layout">
+            <article class="redacted-file">
+              <span class="stamp stamp-danger">OPERACAO OUTUBRO</span>
+              <h3>Da crise do Governo Provisorio ao poder bolchevique</h3>
+              <p>Os bolcheviques exploraram a continuidade da guerra, a lentidao das reformas e a forca dos sovietes. A tomada de pontos estrategicos em Petrogrado transformou uma crise de legitimidade em ruptura de Estado.</p>
+            </article>
+            <div class="manifesto-wall">
+              <strong>Paz</strong>
+              <strong>Terra</strong>
+              <strong>Pao</strong>
+            </div>
+          </div>
+        </section>
+
+        <section data-title="Timeline">
+          <div class="slide-header">
+            <span>Arquivo 08 / Cronologia</span>
+            <h2>Linha do tempo interativa</h2>
+          </div>
+          <div class="timeline" id="timeline">
+            <button data-year="1905" class="active" type="button">1905</button>
+            <button data-year="1914" type="button">1914</button>
+            <button data-year="fev1917" type="button">Fev. 1917</button>
+            <button data-year="out1917" type="button">Out. 1917</button>
+            <button data-year="1918" type="button">1918</button>
+            <button data-year="1922" type="button">1922</button>
+          </div>
+          <article class="timeline-file" id="timelineFile">
+            <span>1905</span>
+            <h3>Ensaio geral revolucionario</h3>
+            <p>O Domingo Sangrento e as revoltas de 1905 revelaram a fragilidade do regime e forcaram concessoes limitadas.</p>
+          </article>
+        </section>
+
+        <section data-title="Quiz">
+          <div class="slide-header">
+            <span>Arquivo 09 / Interrogatorio</span>
+            <h2>Quiz de investigacao</h2>
+          </div>
+          <div class="quiz-shell">
+            <div class="quiz-top">
+              <span id="quizStep">Pergunta 1/7</span>
+              <strong id="quizScore">Pontuacao: 0</strong>
+            </div>
+            <div class="quiz-progress"><span id="quizProgress"></span></div>
+            <h3 id="quizQuestion">Carregando pergunta...</h3>
+            <div id="quizOptions" class="quiz-options"></div>
+            <p id="quizFeedback" class="quiz-feedback" aria-live="polite"></p>
+            <button id="quizNext" class="primary-btn" type="button">Proxima evidencia</button>
+          </div>
+        </section>
+
+        <section data-title="Tribunal">
+          <div class="slide-header">
+            <span>Arquivo 10 / Julgamento historico</span>
+            <h2>Tribunal historico</h2>
+          </div>
+          <div class="courtroom">
+            <article class="judge-panel">
+              <span class="section-kicker">Questao da banca</span>
+              <h3>A Revolucao Russa foi inevitavel?</h3>
+              <p>O julgamento exige argumentar com cuidado: crises estruturais criaram condicoes de ruptura, mas decisoes politicas, guerra e organizacao revolucionaria definiram ritmo e resultado.</p>
+            </article>
+            <div class="verdicts">
+              <button data-verdict="inevitavel" type="button">Tese: inevitavel</button>
+              <button data-verdict="evitavel" type="button">Tese: evitavel</button>
+              <button data-verdict="complexa" type="button">Tese: multicausal</button>
+            </div>
+            <article id="verdictText" class="verdict-text">
+              <span class="section-kicker">Parecer aguardando selecao</span>
+              <p>Escolha uma tese para montar o argumento oral do grupo.</p>
+            </article>
+          </div>
+        </section>
+
+        <section data-title="Consequencias">
+          <div class="slide-header">
+            <span>Arquivo 11 / Impactos</span>
+            <h2>Consequencias</h2>
+          </div>
+          <div class="impact-grid">
+            <article><span>Politica</span><h3>Novo Estado</h3><p>Fim da monarquia e ascensao de um regime dirigido pelo Partido Comunista.</p></article>
+            <article><span>Economia</span><h3>Ruptura e planificacao</h3><p>Guerra Civil, NEP e posterior centralizacao economica pelo Estado.</p></article>
+            <article><span>Sociedade</span><h3>Promessa e controle</h3><p>Alfabetizacao, mobilizacao popular e transformacoes sociais convivendo com repressao.</p></article>
+            <article><span>Mundo</span><h3>Seculo XX ideologico</h3><p>Inspirou partidos, revolucoes, conflitos e a futura polarizacao global.</p></article>
+          </div>
+        </section>
+
+        <section class="credits-slide" data-title="Creditos">
+          <div class="credits-card">
+            <span class="stamp stamp-danger">CASO ENCERRADO</span>
+            <h2>Creditos finais</h2>
+            <p>Dossie 1917 - Revolucao Russa</p>
+            <div class="credits-list">
+              <span>Gustavo Tavares</span><span>Leonardo</span><span>Yuri</span><span>Ravi</span><span>Samuel</span><span>Kaue</span>
+            </div>
+            <small>HTML5 · CSS3 · JavaScript · Reveal.js · GSAP</small>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div id="infoModal" class="modal-overlay" aria-hidden="true">
+      <article class="info-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" type="button" aria-label="Fechar">&times;</button>
+        <span id="modalKicker"></span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalBody"></p>
+      </article>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="data/quiz.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
